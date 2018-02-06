@@ -143,10 +143,7 @@ class ActionsController extends Controller
             return new JsonResponse($reponse, Response::HTTP_BAD_REQUEST);
 
         }
-
-        //$actions->setTitle($data->getTitle());
-        //$actions->setUser($this->getUser());
-        //$actions->setContent($data->getContent());
+        
         $actions->setTitle($data->getTitle());
         $actions->setActionName($data->getActionName());
         $actions->setUserID($data->getUserID());
